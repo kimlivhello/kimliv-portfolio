@@ -119,22 +119,16 @@ body {
 h1 {
     color: #c10001;
     font-family: 'Poiret One', cursive;
-    font-size: 3.75em;
-}
-
-h2 {
-    color: #c10001;
-    font-family: 'Poiret One', cursive;
     font-size: 2em;
 }
 
-h3 {
+h2 {
     font-family: 'Poiret One', cursive;
     font-size: 2.5em;
     font-weight: bold;
 }
 
-h4 {
+h3 {
     font-size: 1.5em;
     font-weight: normal;
 }
@@ -143,7 +137,7 @@ ul,
 ol {
     list-style: none;
     padding-left: 0;
-    margin: 0;
+    /*margin: 0;*/
 }
 
 ul li,
@@ -177,20 +171,20 @@ header {
     background-size: cover; */
     background: white;
     min-height: 600px;
-    margin: 0;
+    /* margin: 0; */
 }
 
 header .header-container {
     padding: 5%;
     text-align: center;
-}
+} 
 
-header h2 {
-    margin-top: 20px;
+header h1 {
+   /* margin-top: 20px; */
 }
 
 header .logo-container {
-    margin: 30px 0;
+   /*  margin: 30px 0; */
 }
 
 header img {
@@ -217,17 +211,17 @@ header .header-bottom {
     border-top: 3px solid #c10001;
     border-bottom: 3px solid #c10001;
     padding: 10%;
-    margin: 50px 0;
+    margin-bottom: 50px;
     }
 
 /***** Portfolio Mobile Styles *****/
 
 #portfolio img {
-    margin-top: 10%;
+  margin-top: 10%;
 }
 
-#portfolio h4 {
-    margin-top: 3%;
+#portfolio h3 {
+  /*  margin-top: 3%; */
 }
 
 /***** Services Mobile Styles *****/
@@ -237,7 +231,7 @@ header .header-bottom {
     padding-bottom: 40px;
 }
 
-#services h3 {
+#services h2 {
     color: #c10001;
 }
 
@@ -263,7 +257,7 @@ header .header-bottom {
 #about-me p {
     padding: 5%;
     line-height: 1.7em;
-    margin: 0;
+    /* margin: 0; */
     text-align: left;
 }
 
@@ -274,8 +268,12 @@ header .header-bottom {
     padding: 10%;
 }
 
-#contact h3 {
-    margin: 0;
+#contact .content-container {
+    padding-top: 0;
+}
+
+#contact h2 {
+   /* margin: 0; */
 }
 
 .social-icons {
@@ -303,6 +301,12 @@ footer {
 
 footer a {
     color: #b3d4fc;
+}
+
+/***** Local Buzz Image Page *****/
+
+#local-buzz-image {
+    margin: 0 auto;
 }
 
 
@@ -411,7 +415,7 @@ footer a {
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
-        width: 90%;
+        width: 100%;
     }
 
     header .logo-container {
@@ -430,14 +434,14 @@ footer a {
         padding: 0;
     }
 
-    header h2 {
+    header h1 {
         font-size: 2.5em;
     }
 
     /*** Portfolio Section Tablet Styles ***/
 
     #portfolio img {
-        margin-top: 5%;
+        margin-top: 10%;
     }
 
     #portfolio .content-container {
@@ -455,7 +459,7 @@ footer a {
         flex-flow: row wrap;
         justify-content: space-between;
         align-items: flex-start;
-        margin-bottom: 50px;
+       /* margin-bottom: 50px; */
     }
 
     #services article {
@@ -473,7 +477,7 @@ footer a {
         max-height: 250px;
     }
 
-    #about-me h3 {
+    #about-me h2 {
         width: 100%;
     }
 
@@ -532,6 +536,7 @@ footer a {
 
     .content-container {
         max-width: 1200px;
+        padding: 0;
     }
 
     header,
@@ -550,9 +555,13 @@ footer a {
         font-size: 1.125em;
     }
 
+    h2 {
+        margin-top: 0;
+    }
+
    /*** Header Desktop Styles ***/
 
-    header h2 {
+    header h1 {
         font-size: 3.75em;
     }
 
@@ -560,7 +569,6 @@ footer a {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
-        max-width: 1200px;
     }
 
     header .logo-container {
@@ -571,6 +579,7 @@ footer a {
 
     header .header-bottom {
         width: 100%;
+        margin-top: 50px;
         max-width: 1200px;
     }
 
@@ -681,14 +690,14 @@ footer a {
     }
 
     p,
-    h2,
-    h3 {
+    h1,
+    h2 {
         orphans: 3;
         widows: 3;
     }
 
-    h2,
-    h3 {
+    h1,
+    h2 {
         page-break-after: avoid;
     }
 }
